@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-assign": {
+    "hello-world": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,7 +105,7 @@
               "e2e/tsconfig.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "*/node_modules/*"
             ]
           }
         },
@@ -123,6 +126,6 @@
   },
   "defaultProject": "angular-assign",
   "cli": {
-    "analytics": "66e73442-31b6-4b71-8350-889e20aaa512"
+    "analytics": "2d4f06ed-d730-4af6-b48e-e1fef6dcf6e1"
   }
 }
